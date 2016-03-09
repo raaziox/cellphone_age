@@ -28,6 +28,7 @@ public class CellPhoneAge extends AppCompatActivity {
     private void initView() {
         TextView phoneAge = (TextView) findViewById(R.id.phone_age);
         String age = getOldestAppsAge(this);
+        phoneAge.setText("Cellphone age: "+ age);
     }
 
     // @return oldest app's installed date.
